@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Apr 21 06:47:13 ICT 2017
+org.eclipse.jst.jee.server\:MitraisApp=D\:\\JAMAL TITIP\\apache-tomcat-8.5.14\\wtpwebapps\\MitraisApp
+org.eclipse.jst.jee.server\:MitraisServ=D\:\\JAMAL TITIP\\apache-tomcat-8.5.14\\wtpwebapps\\MitraisServ

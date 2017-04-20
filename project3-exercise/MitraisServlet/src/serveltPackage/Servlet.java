@@ -29,5 +29,6 @@ public class Servlet extends HttpServlet implements javax.servlet.Servlet {
 //		writer.println("This is a <b> bold text </b>");
 		writer.println("You Searched for..."+searchTerm);
 					}
-
+	
+	
 }

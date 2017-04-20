@@ -1,0 +1,17 @@
+package serveltPackage;
+
+public class WebContext {
+	response.setContentType("application/json");
+	response.setCharacterEncoding("utf-8");
+	PrintWriter out = response.getWriter();
+
+	  //create Json Object
+	  JSONObject json = new JSONObject();
+
+	    // put some value pairs into the JSON object .
+	    json.put("Mobile", 9999988888);
+	    json.put("Name", "ManojSarnaik");
+
+	    // finally output the json string       
+	    out.print(json.toString());
+}

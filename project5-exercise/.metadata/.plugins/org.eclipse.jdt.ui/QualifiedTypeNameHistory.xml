@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="BookManager.BookClass"/>
+<fullyQualifiedTypeName name="utils.MainUtils"/>
+<fullyQualifiedTypeName name="BookManager.BookObject"/>
+</qualifiedTypeNameHistroy>

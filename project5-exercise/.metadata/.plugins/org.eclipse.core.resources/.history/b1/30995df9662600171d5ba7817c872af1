@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+	<h:panelGroup rendered="#{!bookClass.edit}">
+		<h3>Add Book</h3>
+		<h:form>
+			<p>
+				ISBN:
+				<h:inputText value="#{bookClass.item.ISBN}" />
+			</p>
+			<p>
+				Title:
+				<h:inputText value="#{bookClass.item.title}" />
+			</p>
+			<p>
+				Author:
+				<h:inputText value="#{bookClass.item.author}" />
+			</p>
+			<p>
+				Publisher:
+				<h:inputText value="#{bookClass.item.publisher}" />
+			</p>
+			<p>
+				Price: $
+				<h:inputText value="#{bookClass.item.price}" />
+			</p>
+			
+			<p>
+				<h:commandButton value="add" action="#{bookClass.add}" />
+				<h:commandButton value="reset" action="#{bookClass.resetAdd}" />
+			</p>
+		</h:form>
+	</h:panelGroup>
+
+	<h:panelGroup rendered="#{bookClass.edit}">
+		<h3>Edit student #{bookClass.item.id}</h3>
+		<h:form>
+			<p>
+				ISBN:
+				<h:inputText value="#{bookClass.item.ISBN}" />
+			</p>
+			<p>
+				Title:
+				<h:inputText value="#{bookClass.item.title}" />
+			</p>
+			<p>
+				Author:
+				<h:inputText value="#{bookClass.item.author}" />
+			</p>
+			<p>
+				Publisher:
+				<h:inputText value="#{bookClass.item.publisher}" />
+			</p>
+			<p>
+				Price: $
+				<h:inputText value="#{bookClass.item.price}" />
+			</p>
+			<p>
+				<h:commandButton value="add" action="#{bookClass.add}" />
+				<h:commandButton value="reset" action="#{bookClass.resetAdd}" />
+			</p>
+		</h:form>
+	</h:panelGroup>
+
+	<h3>List Books</h3>
+	<h:form rendered="#{not empty bookClass.list}">
+		<h:dataTable value="#{bookClass.list}" var="item">
+			<h:column>
+				<f:facet name="header">ID</f:facet>#{item.Id}</h:column>
+			<h:column>
+				<f:facet name="header">ISBN</f:facet>#{item.ISBN}</h:column>
+			<h:column>
+				<f:facet name="header">Title</f:facet>#{item.title}</h:column>
+			<h:column>
+				<f:facet name="header">Author</f:facet>#{item.author}</h:column>
+			<h:column>
+				<f:facet name="header">Publisher</f:facet>#{item.publisher}</h:column>
+			<h:column>
+				<f:facet name="header">Price</f:facet>#{item.price}</h:column>
+			<h:column>
+				<h:commandButton value="edit" action="#{bookClass.edit(item)}" />
+			</h:column>
+			<h:column>
+				<h:commandButton value="delete" action="#{bookClass.delete(item)}" />
+			</h:column>
+		</h:dataTable>
+	</h:form>
+	
+	
+	<h:panelGroup rendered="#{empty simpleCrudBean.list}">
+        <p>No students! Please add Books.</p>
+    </h:panelGroup>
+    
+    
+</body>
+</html>

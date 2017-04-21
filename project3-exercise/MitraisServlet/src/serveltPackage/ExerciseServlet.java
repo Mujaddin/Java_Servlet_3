@@ -45,7 +45,7 @@ public class ExerciseServlet extends HttpServlet {
 	}
 
 	public List<Student> getList(Student[] arrayStudent, String params) {
-		List<Student> listStudent = Arrays.asList(arrayStudent).stream().filter(s -> s.getName().equals(params)).collect(Collectors.toList());
+		List<Student> listStudent = Arrays.asList(arrayStudent).stream().filter(s -> s.getName().contains(params)).collect(Collectors.toList());
 		return listStudent;
 	}
 

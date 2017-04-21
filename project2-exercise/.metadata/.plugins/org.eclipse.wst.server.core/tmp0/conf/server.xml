@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\Java Servlet 3\Java Servlet 3 Exercises\project2-exercise\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\Java Servlet 3\Java Servlet 3 Exercises\project2-exercise\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MitraisApplication" path="/MitraisApplication" reloadable="true" source="org.eclipse.jst.jee.server:MitraisApplication"/><Context docBase="D:\Java Servlet 3\Java Servlet 3 Exercises\project2-exercise\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MitraisServlet" path="/MitraisServlet" reloadable="true" source="org.eclipse.jst.jee.server:MitraisServlet"/></Host>
+      <Context docBase="D:\JAMAL TITIP\GitHub\JavaServlet3\project2-exercise\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\JAMAL TITIP\GitHub\JavaServlet3\project2-exercise\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MitraisApplication" path="/MitraisApplication" reloadable="true" source="org.eclipse.jst.jee.server:MitraisApplication"/></Host>
     </Engine>
   </Service>
 </Server>
